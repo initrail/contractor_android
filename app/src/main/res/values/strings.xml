@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Net Workers</string>
+    <string name="test">Hello there.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="main_url">http://10.0.0.38:8080/networkers/</string>
+</resources>

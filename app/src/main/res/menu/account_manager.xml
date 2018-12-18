@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/divide1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/home"
+            android:title="Home" />
+    </group>
+    <group
+        android:id="@+id/divide2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/details"
+            android:title="Account Details" />
+    </group>
+    <group
+        android:id="@+id/divide3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/messages"
+            android:title="Messages" />
+    </group>
+    <group
+        android:id="@+id/divide4"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/existing_projects"
+            android:title="Existing Projects" />
+    </group>
+    <group
+        android:id="@+id/divide5"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/create_project"
+            android:title="Create A Project" />
+    </group>
+    <group
+        android:id="@+id/divide6"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/settings"
+            android:title="Settings" />
+    </group>
+    <group
+        android:id="@+id/divide7"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/help"
+            android:title="Help" />
+    </group>
+    <group
+        android:id="@+id/divide8"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
+    </group>
+</menu>

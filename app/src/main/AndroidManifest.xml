@@ -1,0 +1,102 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.integrail.networkers">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden|adjustResize">
+        <receiver android:name=".primary_operations.messaging.ToggleAlarm">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.integrail.networkers.setalarm"/>
+                <action android:name="com.integrail.networkers.stopalarm"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".primary_operations.messaging.StartMessagingService">
+            <intent-filter>
+                <action android:name="integrail.networkers.restartingservicepause" />
+                <action android:name="integrail.networkers.restartingservice" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="integrail.networkers.stoprestartservice" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".primary_operations.messaging.StartResendAndReReadOnConnect">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".primary_operations.messaging.ReReadOnConnect"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="integrail.theconnection.ReReadOnConnect"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".primary_operations.messaging.SendMessageNoUI"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="integrail.networkers.SendMessageNoUI"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".primary_operations.messaging.ResendOnConnect"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="integrail.theconnection.ResendOnConnect"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".primary_operations.messaging.DownloadImage"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="integrail.theconnection.downloadimage" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".primary_operations.messaging.MessagingService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="integrail.theconnection.MessageService" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".primary_operations.messaging.PushNotification">
+            <intent-filter>
+                <action android:name="integrail.theconnection.pushnotification" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="update.MessageThread" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AndroidDatabaseManager"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+    </application>
+
+</manifest>
+

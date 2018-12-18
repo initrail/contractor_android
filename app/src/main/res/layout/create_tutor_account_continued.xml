@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#00ffffff"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Contractor Sign Up"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/continuedScroll">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:id="@+id/continuedDynamic">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="Interior skills: Choose all of the options that correlate to your skillset with interior work."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:text="Interior Skills (Choose all that apply)"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/walls2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="walls"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Repair"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Painting"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="flooring repair"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Chipped Tile"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Damaged Wood"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Carpet"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="flooring installation"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Tile"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Wood"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Carpet"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="plumbing"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Toilet Clog"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Troubleshooting a Leak"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="electrical"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="General"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="cooling and heating"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Troubleshooting"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="cleaning"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Home Touch-Up"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Home Deep-Clean"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="other"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Fixture Installation"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Troubleshooting Appliances"
+                android:theme="@style/switchStyle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="carpet"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Cleaning"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="25dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/coCoNextButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Next"
+                android:onClick="onProgressiveClick"
+                android:textAllCaps="false"
+                android:backgroundTint="#B6AFA9"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

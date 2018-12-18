@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#00ffffff"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Contractor Sign Up"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/finalScroll">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:id="@+id/finishedDynamic">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="Exterior skills: Choose all of the options that correlate to your skillset with exterior work."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:text="Exterior Skills (Choose all that apply)"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/walls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="walls"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Repair"
+                android:theme="@style/switchStyle"  />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Painting"
+                android:theme="@style/switchStyle"  />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="windows"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Repair"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="lawn"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Mowing"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Trimming"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Cleaning Up Debris"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Sprinklers"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="Insurance and licensing information."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:background="#00ffffff"
+                tools:context="integrail.theconnection.MainActivity">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/colorPrimary"
+                        android:text="Yes"
+                        android:id="@+id/radioButton"
+                        android:layout_gravity="right"
+                        android:checked="false" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        app:buttonTint="@color/colorPrimary"
+                        android:id="@+id/radioButton2"
+                        android:checked="true"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are you insured?"
+                    android:id="@+id/textView29"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="Licenses (Choose all that apply)"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="licenses"
+                android:id="@+id/textView31" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Electrician"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="HVAC"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Plumber"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Pool Maintenance"
+                android:theme="@style/switchStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/darker_gray" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/coCrFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Finish"
+                android:onClick="finishClick"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorPrimary"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

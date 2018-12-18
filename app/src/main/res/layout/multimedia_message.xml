@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/linearLayout4"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/picture">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/messageImage"
+            android:src="@drawable/blank"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:text="Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateOfMessage"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/blank"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
